@@ -14,7 +14,7 @@ public class LojaApplication {
 	}
 	
 	@Bean
-	@LoadBalanced
+	@LoadBalanced // client side load balancer
 	public RestTemplate getRestTemplate() {
 		return new RestTemplate();
 	}
